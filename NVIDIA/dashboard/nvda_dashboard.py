@@ -167,7 +167,8 @@ html, body, [class*="css"] {
 
 
 # ── DATA LOADING DA EXCEL ─────────────────────────────────────────────────────
-EXCEL_PATH = "nvda_analysis.xlsx"   # <- stesso folder del .py, generato dal notebook
+from pathlib import Path
+EXCEL_PATH = Path(__file__).parent / "nvda_analysis.xlsx"  # sempre nella cartella dello script
 
 @st.cache_data(show_spinner=False)
 def load_from_excel(path: str):
