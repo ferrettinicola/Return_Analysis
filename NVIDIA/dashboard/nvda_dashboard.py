@@ -355,11 +355,14 @@ with c1:
         fillcolor="rgba(118,85,255,0.08)",
         name="Adj Close",
     ))
+    price_min = prices["Adj Close"].min()
+    price_max = prices["Adj Close"].max()
     fig_price.update_layout(
         title=dict(text="Adj Close Price · NVDA (2016–2026)",
                    font=dict(family="DM Serif Display, serif", size=16, color="#d0d0e8")),
         **base_layout(),
         yaxis_title="USD ($)",
+        yaxis_range=[price_min * 0.95, price_max * 1.05],
         hovermode="x unified",
     )
     st.plotly_chart(fig_price, use_container_width=True)
