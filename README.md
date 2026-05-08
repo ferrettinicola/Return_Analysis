@@ -22,7 +22,7 @@ For each company, the workflow is:
 
 | Company | Ticker | Period | Notebook | Dashboard |
 |---|---|---|---|---|
-| NVIDIA Corporation | NVDA | Jan 2016 – Apr 2026 | `NVIDIA/NVIDIA.ipynb` | `NVIDIA/dashboard/nvda_dashboard.py` |
+| NVIDIA Corporation | NVDA | Jan 2016 – Apr 2026 | `NVIDIA/NVIDIA.ipynb` | [🚀 Launch Dashboard](https://return-analysis-nvidia-1.streamlit.app) |
 
 ---
 
